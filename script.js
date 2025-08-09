@@ -58,5 +58,7 @@ calcularSubtotal();
 calcularValorIva();
 calcularTotal();
 
+// Mostrar en consola la factura
+console.log(mostrarFactura());
 
 
