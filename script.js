@@ -12,3 +12,9 @@ function obtenerTarifaBase() {
 const obtenerCargoFijo = function() {
     return 3500; // pesos
 };
+
+// 4️⃣ Función de expresión: porcentaje de IVA
+const obtenerIvaPorcentaje = function() {
+    return 19; // porcentaje
+};
+
