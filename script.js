@@ -18,3 +18,10 @@ const obtenerIvaPorcentaje = function() {
     return 19; // porcentaje
 };
 
+
+// 5️⃣ Función flecha: subtotal (consumo × tarifa)
+const calcularSubtotal = () => {
+    return obtenerConsumoMensual() * obtenerTarifaBase();
+};
+
+
