@@ -35,28 +35,23 @@ const calcularTotal = () => {
 };
 
 // 8️⃣ Función final: imprimir resultados
+
 function mostrarFactura() {
-    return `
-📄 Factura Mensual - Empresa de Energía
---------------------------------------
-Consumo mensual: ${obtenerConsumoMensual()} kWh
-Tarifa base: ${obtenerTarifaBase()} pesos/kWh
-Subtotal: ${calcularSubtotal()} pesos
-IVA (${obtenerIvaPorcentaje()}%): ${calcularValorIva()} pesos
-Cargo fijo: ${obtenerCargoFijo()} pesos
---------------------------------------
-💰 Total a pagar: ${calcularTotal()} pesos
-    `;
+    console.log('Consumo mensual:', obtenerConsumoMensual(), 'kWh');
+    console.log('Tarifa base:', obtenerTarifaBase(), 'pesos por kWh');
+    console.log('Cargo fijo:', obtenerCargoFijo(), 'pesos');
+    console.log('IVA (%):', obtenerIvaPorcentaje(), '%');
+    console.log('Subtotal:', calcularSubtotal(), 'pesos');
+    console.log('Valor del IVA:', calcularValorIva(), 'pesos');
+    console.log('Total a pagar:', calcularTotal(), 'pesos');
 }
 
-// 🔹 Llamadas para cumplir con la condición de invocar todas las funciones
-obtenerConsumoMensual();
-obtenerTarifaBase();
-obtenerCargoFijo();
-obtenerIvaPorcentaje();
-calcularSubtotal();
-calcularValorIva();
-calcularTotal();
+
+
+
+
+
+
 
 // Mostrar en consola la factura
 console.log(mostrarFactura());
