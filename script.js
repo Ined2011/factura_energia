@@ -29,4 +29,10 @@ const calcularValorIva = () => {
     return calcularSubtotal() * (obtenerIvaPorcentaje() / 100);
 };
 
+// 7️⃣ Función flecha: total a pagar
+const calcularTotal = () => {
+    return calcularSubtotal() + calcularValorIva() + obtenerCargoFijo();
+};
+
+
 
