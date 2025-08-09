@@ -2,3 +2,8 @@
 function obtenerConsumoMensual() {
     return 410; // kWh
 }
+
+// 2️⃣ Función declarativa: tarifa base por kWh
+function obtenerTarifaBase() {
+    return 620; // pesos por kWh
+}
