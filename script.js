@@ -49,3 +49,14 @@ Cargo fijo: ${obtenerCargoFijo()} pesos
     `;
 }
 
+// 🔹 Llamadas para cumplir con la condición de invocar todas las funciones
+obtenerConsumoMensual();
+obtenerTarifaBase();
+obtenerCargoFijo();
+obtenerIvaPorcentaje();
+calcularSubtotal();
+calcularValorIva();
+calcularTotal();
+
+
+
