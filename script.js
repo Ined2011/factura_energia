@@ -7,3 +7,8 @@ function obtenerConsumoMensual() {
 function obtenerTarifaBase() {
     return 620; // pesos por kWh
 }
+
+// 3️⃣ Función de expresión: cargo fijo
+const obtenerCargoFijo = function() {
+    return 3500; // pesos
+};
