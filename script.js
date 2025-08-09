@@ -24,4 +24,9 @@ const calcularSubtotal = () => {
     return obtenerConsumoMensual() * obtenerTarifaBase();
 };
 
+// 6️⃣ Función flecha: valor del IVA
+const calcularValorIva = () => {
+    return calcularSubtotal() * (obtenerIvaPorcentaje() / 100);
+};
+
 
