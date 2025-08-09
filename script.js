@@ -34,5 +34,18 @@ const calcularTotal = () => {
     return calcularSubtotal() + calcularValorIva() + obtenerCargoFijo();
 };
 
-
+// 8️⃣ Función final: imprimir resultados
+function mostrarFactura() {
+    return `
+📄 Factura Mensual - Empresa de Energía
+--------------------------------------
+Consumo mensual: ${obtenerConsumoMensual()} kWh
+Tarifa base: ${obtenerTarifaBase()} pesos/kWh
+Subtotal: ${calcularSubtotal()} pesos
+IVA (${obtenerIvaPorcentaje()}%): ${calcularValorIva()} pesos
+Cargo fijo: ${obtenerCargoFijo()} pesos
+--------------------------------------
+💰 Total a pagar: ${calcularTotal()} pesos
+    `;
+}
 
